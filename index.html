@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IMPORTS CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- IMPORTS JS & AXIOS-->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Fullstack Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Formulaire de contact</h1>
+      <form id="contact-form">
+        <!-- First name -->
+        <input type="text" placeholder="Prénom" id="firstname" />
+        <!-- Last name -->
+        <input type="text" placeholder="Nom" id="lastname" />
+        <!-- Email -->
+        <input type="email" placeholder="Email" id="email" />
+        <!-- Subject -->
+        <input type="text" placeholder="Sujet" />
+        <!-- Message -->
+        <textarea
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Votre message ici..."
+        ></textarea>
+        <!-- Send button -->
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </div>
+  </body>
+</html>
