@@ -16,7 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.querySelector("#message").value,
       };
 
-      const repose = await axios.post("http://localhost/3000/form", data);
+      const response = await axios.post(
+        "https://fullstack-form-backend.herokuapp.com/form",
+        data
+      );
       console.log(response);
 
       if (response.status === 200) {
