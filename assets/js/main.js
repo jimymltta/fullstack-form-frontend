@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       const response = await axios.post(
-        "https://fullstack-form-backend.herokuapp.com/form",
+        "https://fullstack-form-backend.herokuapp.com/",
         data
       );
       console.log(response);
